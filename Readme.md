@@ -1,11 +1,11 @@
 # Способ установки
 
-- Поместить файл certificates_controller.rb в папку app/controllers
+- cp certificates_controller.rb /var/www/top52/app/controllers
 
-- Поместить папку certificates в папку app/views
+- rsync -a certificates /var/www/top52/app/views
 
-- Поместить файл routes.rb в папку config
+- cp routes.rb /var/www/top52/config
 
-- Поместить папку cert_create в папку public
+- rsync -a cert_create /var/www/top52/public
 
 - Запустить
